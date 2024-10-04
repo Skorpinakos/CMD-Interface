@@ -1,5 +1,5 @@
-from cmdinterface.CmdInterface import CmdInterface 
-#     ^^^ replace with where file is located/named
+from cmdinterface.CmdInterface import CmdInterface
+
 
 # Initialize 
 
