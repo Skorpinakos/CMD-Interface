@@ -30,6 +30,8 @@ class CmdInterface:
         self.process.wait()
 
     def send_command(self,command):
+
+        #print(command)
         
         #multithreading prevention
         while True:
@@ -43,8 +45,11 @@ class CmdInterface:
         end_command_signal = self.end_command_signal
         extension=f"&& echo {end_command_signal}"
         command_with_signal = f"{command} {extension}\n"
+        #print(command_with_signal)
         self.process.stdin.write(command_with_signal)
+       
         self.process.stdin.flush()
+        #print("ok")
 
         # Read output until the end signal is detected
         output = []
@@ -62,6 +67,7 @@ class CmdInterface:
         if self.log_mode==True:
             self.log+=output
         self.lock=False
+        #print(output)
         return output
     
 
