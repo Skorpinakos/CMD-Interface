@@ -1,4 +1,4 @@
-# CmdInterface Class Documentation
+## [CmdInterface](https://pypi.org/project/simplecmdinterface/)
 
 ## Overview
 The `CmdInterface` class provides a robust Python interface for interacting with command-line processes in Windows. It is designed to encapsulate command sending and output handling of a single terminal into a simple and clean API that can be easily integrated into larger applications.
